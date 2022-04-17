@@ -24,6 +24,11 @@ img {
 
 .link {
     text-decoration: none;
+
+    .site-nav &:hover, 
+    .site-nav &:focus {
+    color: var(--accent-color)
+}
 }
 
 .section {

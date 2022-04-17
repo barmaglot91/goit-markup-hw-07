@@ -81,6 +81,13 @@
     background-color: #ffffff10;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--accent-color);
+}
 }
 
 
@@ -90,12 +97,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    background-color: var(--accent-color);
-}
 
 
 
@@ -108,11 +110,13 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
-.contacts-footer:not(:last-child) {
-    margin-bottom: 9px;
-}
+
 
 .accentlogo {
     color: var(--primary-white-color);
@@ -150,14 +154,25 @@ color: #FFFFFF;
     border: none;
 
     align-items: center;
-    
-}
 
-.button-footer:hover,
-.button-footer:focus {
+    &:hover,
+    &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--secondary-accent-color);
+    }
+    
+    &::after {
+        background-image: url('../images/icon-send.svg');
+        width: 24px;
+        height: 24px;
+        content: "";
+        display: inline-block;
+        margin-left: 10px;
+        
+    }
 }
+
+
 
 .img-send {
     margin-left: 10px;
@@ -179,29 +194,22 @@ color: #FFFFFF;
     padding-left: 16px;
     margin-right: 12px;
     color: var(--primary-white-color);
-}
 
-.contact-form-input-email::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-.button-footer::after {
-    background-image: url('../images/icon-send.svg');
-    width: 24px;
-    height: 24px;
-    content: "";
-    display: inline-block;
-    margin-left: 10px;
+    &::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
     
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+    
+    }
 }
+
+
+

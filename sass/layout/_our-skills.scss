@@ -38,10 +38,12 @@
 
 .title-text {
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.title-text:last-child {
-    margin-right: 0;
-}
+
 
 .fon-text {
     color: #FFFFFF;
