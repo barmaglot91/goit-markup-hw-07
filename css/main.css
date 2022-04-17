@@ -70,7 +70,7 @@ img {
   padding: 0 15px;
 }
 
-.logo {
+.header__logo_theme_light {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -79,7 +79,7 @@ img {
   text-decoration: none;
 }
 
-.logo__img {
+.logo-img {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -656,7 +656,7 @@ img {
   padding: 60px 0;
 }
 
-.logo-footer {
+.footer__logo_theme_dark {
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: bold;
